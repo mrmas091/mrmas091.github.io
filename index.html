@@ -1,569 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mohammed Ali Portfolio </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+  <title>Shaik Mohammed Ali | Power BI Developer, Data Analyst & SQL Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Portfolio of Shaik Mohammed Ali, a Power BI Developer, Data Analyst and SQL Developer helping businesses turn raw data into dashboards, automated reports and actionable insights.">
+  <meta name="keywords" content="Power BI Developer, Data Analyst, SQL Developer, DAX, Power Query, Business Intelligence, Power BI Freelancer, Dashboard Developer, Bengaluru">
+  <meta name="author" content="Shaik Mohammed Ali">
+  <meta name="theme-color" content="#000000">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <meta property="og:title" content="Shaik Mohammed Ali | Power BI Developer & Data Analyst">
+  <meta property="og:description" content="Power BI, SQL, DAX, Power Query and business intelligence solutions for better decision-making.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/about-m.png">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <style>
+    html { scroll-behavior: smooth; }
 
+    body {
+      background: #000;
+      color: rgba(255,255,255,.72);
+    }
 
+    .section-kicker {
+      color: #ffbd39;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
 
-<style>
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,189,57,.45);
+      border-radius: 999px;
+      background: rgba(255,189,57,.08);
+      color: #ffbd39;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+    .availability-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ffbd39;
+      box-shadow: 0 0 0 5px rgba(255,189,57,.12);
+    }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+    /* Keep the hero content clear of the fixed navigation bar */
+    #home-section .slider-text .text {
+      padding-top: 88px;
+      padding-bottom: 20px;
+    }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+    #home-section .availability-badge {
+      display: flex;
+      width: max-content;
+      margin-bottom: 10px;
+    }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+    #home-section .subheading {
+      display: block;
+      margin-bottom: 4px;
+    }
 
+    #home-section h1 {
+      margin-top: 8px !important;
+      margin-bottom: 14px !important;
+    }
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+    #home-section h2 {
+      margin-top: 14px !important;
+    }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+    #home-section .hero-value {
+      margin-top: 12px;
+      line-height: 1.65;
+    }
 
+    #home-section .hero-actions {
+      margin-top: 18px !important;
+    }
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
+    #home-section .hero-social {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
+    /* Pure CSS typing animation: no JavaScript or carousel clone issues */
+    .typing-wrap {
+      position: relative;
+      height: 42px;
+      margin-top: 4px;
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: #fff;
+      overflow: hidden;
+    }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+    .typing-role {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 0;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      opacity: 0;
+      border-right: 2px solid #ffbd39;
+      animation: roleTyping 12s steps(var(--steps), end) infinite;
+    }
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+    .role-1 { --target-width: 18ch; --steps: 18; animation-delay: 0s; }
+    .role-2 { --target-width: 12ch; --steps: 12; animation-delay: 3s; }
+    .role-3 { --target-width: 13ch; --steps: 13; animation-delay: 6s; }
+    .role-4 { --target-width: 23ch; --steps: 23; animation-delay: 9s; }
 
+    @keyframes roleTyping {
+      0%   { width: 0; opacity: 1; }
+      8%   { width: var(--target-width); opacity: 1; }
+      18%  { width: var(--target-width); opacity: 1; }
+      24%  { width: 0; opacity: 1; }
+      25%, 100% { width: 0; opacity: 0; }
+    }
 
-/* project image zoom effect */
+    .hero-value {
+      max-width: 650px;
+      margin-top: 20px;
+      color: rgba(255,255,255,.78);
+      font-size: 17px;
+      line-height: 1.8;
+    }
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+    .hero-actions .btn {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+    .hero-social {
+      margin-top: 16px;
+      font-size: 14px;
+      color: rgba(255,255,255,.58);
+    }
 
+    .hero-social a {
+      color: #fff;
+      font-weight: 600;
+      margin-left: 6px;
+      margin-right: 10px;
+    }
 
-</style>
+    .about-mf .about-img { margin-bottom: 2rem; }
+    .about-mf .about-img img { margin-left: 10px; }
 
+    .profile-card,
+    .service-card,
+    .project-card,
+    .testimonial-card,
+    .resume-wrap {
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+      border-radius: 14px;
+    }
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Mohammed Ali</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+    .profile-card {
+      padding: 28px;
+      width: 100%;
+    }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bh_2.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shaik Mohammed Ali</span></h1>
+    .profile-card .about-img img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255,189,57,.35);
+      margin: 0 auto 24px;
+      display: block;
+    }
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+    .about-info p { margin-bottom: 12px; }
+    .about-info .title-s { color: #fff; font-weight: 600; }
 
-						<script>
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+    .skill-tag,
+    .project-tech span {
+      border: 1px solid rgba(255,189,57,.32);
+      background: rgba(255,189,57,.08);
+      color: #ffbd39;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Freelancer  ',
-						'Teacher  ',
-						'Youtuber   ',
-						];
+    .about-copy {
+      font-size: 16px;
+      line-height: 1.9;
+    }
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+    .stat-card {
+      padding: 26px 18px;
+      text-align: center;
+      height: 100%;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      background: rgba(255,255,255,.03);
+    }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+    .stat-card strong {
+      display: block;
+      color: #ffbd39;
+      font-size: 34px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+    .stat-card span { color: #fff; font-size: 14px; }
 
-						</script>
+    .service-card {
+      padding: 30px 26px;
+      height: 100%;
+      transition: transform .25s ease, border-color .25s ease, background .25s ease;
+    }
 
-						<br>
-						<br>
-			            <h2>A Data Analyst and Power BI Tutor</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.fiverr.com/mrmas09?public_mode=true" class="btn btn-primary py-3 px-4">Fiverr</a> 
-							<a href="https://www.linkedin.com/in/mohammed-ali-148724221/" class="btn btn-white btn-outline-white py-3 px-4">linkedin</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+    .service-card:hover,
+    .project-card:hover,
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,189,57,.45);
+      background: rgba(255,255,255,.055);
+    }
 
+    .service-number {
+      color: #ffbd39;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
 
+    .service-card h3 { color: #fff; font-size: 21px; margin-bottom: 14px; }
+    .service-card p { margin-bottom: 0; line-height: 1.8; }
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-m.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Shaik Mohammed Ali</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>2 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
-									  </div>
-									</div>
-								  </div>
+    .resume-wrap { height: 100%; }
+    .resume-wrap .date { color: #ffbd39; }
+    .resume-wrap .position { color: rgba(255,255,255,.72); }
+    .resume-wrap ul { padding-left: 20px; margin-top: 16px; }
+    .resume-wrap li { margin-bottom: 10px; line-height: 1.7; }
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Power BI</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>SQL Server</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Python</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 3 years of experience in data analytics and visualization, complemented by a bachelor's degree in engineering, I specialize in transforming raw data into actionable insights. Proficient in data analysis, building dynamic reports, writing SQL queries, and leveraging Power BI for impactful solutions. I offer freelancing services and mentorship, empowering clients and students to unlock the full potential of their data-driven decisions.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Teaching, Reading books, Sports</span></li>
-									
-								</ul>
-							</div>
-						</div>
+    .project-card {
+      overflow: hidden;
+      height: 100%;
+      transition: transform .25s ease, border-color .25s ease, background .25s ease;
+    }
 
+    .project-image {
+      height: 235px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Satisfied Mentees</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/mohammed-ali-148724221/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
+    .project-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.45), transparent 60%);
+    }
 
+    .project-body { padding: 25px; }
+    .project-body h3 { color: #fff; font-size: 21px; line-height: 1.4; }
+    .project-body p { line-height: 1.75; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+    .project-link { color: #ffbd39; font-weight: 700; }
+    .project-link:hover { color: #fff; }
 
+    .testimonial-card {
+      padding: 30px;
+      height: 100%;
+      transition: transform .25s ease, border-color .25s ease, background .25s ease;
+    }
 
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Data Analyst, SQL & Power BI Trainer & Consultant with 3+ years of experience helping businesses and professionals master SQL, dashboards, and data-driven decision making.</p>
-          </div>
-        </div>
+    .stars { color: #ffbd39; letter-spacing: 3px; margin-bottom: 18px; }
+    .testimonial-card blockquote { color: #fff; font-size: 18px; line-height: 1.8; margin-bottom: 20px; }
+    .testimonial-source { font-size: 13px; color: rgba(255,255,255,.55); }
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2024</span>
-						<h2>Data Analyst</h2>
-						<span class="position">Huda Infotech</span>
-						<p class="mt-4">Huda Infotech, A company dedicated to innovation, excellence, and driving impactful solutions 
-							<ul>
-								<li>Developed and optimized complex queries, stored procedures, and data transformations to support reporting needs.</li>
-								<li>Designed efficient data models and implemented advanced DAX calculations for insightful and actionable reporting.</li>
-								<li>Created interactive Power BI dashboards with Row-Level Security, ensuring secure and customized user access.</li>
-							</ul>
-						</p>
-					</div>
+    .cta-box {
+      border: 1px solid rgba(255,189,57,.3);
+      background: linear-gradient(135deg, rgba(255,189,57,.12), rgba(255,255,255,.03));
+      border-radius: 18px;
+      padding: 55px 30px;
+      text-align: center;
+    }
 
-				</div>
+    .cta-box h2 { color: #fff; font-size: 36px; margin-bottom: 18px; }
+    .cta-box p { max-width: 760px; margin: 0 auto 26px; font-size: 17px; line-height: 1.8; }
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2024</span>
-						<h2>Data Analyst</h2>
-						<span class="position">freelancing</span>
-						<p class="mt-4">Successfully completed a real-time freelancing project, delivering high-quality results and earning client satisfaction. 
-							<ul>
-								<li>Designed an interactive Power BI dashboard for tracking pizza sales and customer trends.</li>
-								<li>Integrated multiple data sources for accurate sales and inventory reporting.</li>
-								<li>Utilized DAX for advanced calculations and trends analysis, enabling the client to track sales patterns, identify top-selling items, and optimize marketing strategies.</li>
-							</ul>
-						</p>
-					</div>
+    .contact-section .box { border: 1px solid rgba(255,255,255,.08); border-radius: 12px; background: rgba(255,255,255,.03); }
+    .contact-section .box h3 { color: #fff; }
+    .contact-section .box a { word-break: break-word; }
 
-				</div>
-			</div>
+    .social-text-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
 
-		<br>
-		<br>
+    .social-text-links a {
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 10px 16px;
+      color: #fff;
+    }
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2022</span>
-    					<h2>Bachelor of Technology</h2>
-    					<span class="position">Global college of eng & Technology</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
+    .social-text-links a:hover {
+      border-color: #ffbd39;
+      color: #ffbd39;
+    }
 
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2016-2018</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Government Junior College					</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
+    @media (max-width: 767px) {
+      .typing-wrap { font-size: 22px; height: 34px; }
+      .hero-value { font-size: 15px; }
+      .cta-box h2 { font-size: 28px; }
+      .project-image { height: 210px; }
+      .hero-actions .btn { width: 100%; margin-right: 0; }
+    }
+  
+    @media (max-width: 767.98px) {
+      #home-section .slider-text .text {
+        padding-top: 110px;
+        padding-bottom: 30px;
+      }
 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+      #home-section .availability-badge {
+        font-size: 12px;
+        padding: 7px 12px;
+      }
+    }
 
-   
+  </style>
+</head>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Power BI</p>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class=" col-md-5 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/mrmas091/Pizza-Sales-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-                <h3 class="heading"><a href="https://github.com/mrmas091/Pizza-Sales-Analysis">Pizza Sales Analysis using Power BI</a></h3>
-                <p>Developed a Power BI dashboard to track pizza sales, analyze trends, and optimize inventory management</p>
-              </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home-section">Mohammed Ali</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bh_2.png);">
+              <div class="overlay"></div>
             </div>
-          </div>
-		  <div class="col-md-5 d-flex ftco-animate">
-			<div class="blog-entry justify-content-end">
-			<a href="https://github.com/mrmas091/portfolioprojects" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-			</a>
-			<div class="text mt-3 float-right d-block">
+            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+              <div class="text">
+                <div class="availability-badge">Available for freelance & remote projects</div>
+                <span class="subheading">Hello, I'm</span>
+                <h1 class="mb-4 mt-3">Shaik <span>Mohammed Ali</span></h1>
 
-			  <h3 class="heading"><a href="https://github.com/mrmas091/portfolioprojects">COVID-19 Data Analysis</a></h3>
-			  <p>Developed an SQL-based analysis to uncover key insights from COVID-19 data, focusing on case trends, recovery rates.</p>
-			</div>
-		  </div>
-		</div>
-        </div>
-    </section>
+                <div class="typing-wrap" aria-label="Professional roles">
+                  <span class="typing-role role-1">Power BI Developer</span>
+                  <span class="typing-role role-2">Data Analyst</span>
+                  <span class="typing-role role-3">SQL Developer</span>
+                  <span class="typing-role role-4">Freelance BI Consultant</span>
+                </div>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="7">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="3">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Demo Sessions</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="12">0</strong>
-                <span>Fiverr Orders</span>
+                <h2 class="mt-4">I turn business data into decision-ready insights.</h2>
+                <p class="hero-value">
+                  I build interactive Power BI dashboards, SQL-driven reporting solutions, automated data workflows and business intelligence systems that help teams understand performance and make better decisions.
+                </p>
+
+                <div class="hero-actions mt-4">
+                  <a href="#project-section" class="btn btn-primary py-3 px-4">View My Projects</a>
+                  <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4">Hire Me</a>
+                  <a href="https://www.fiverr.com/mrmas09" target="_blank" rel="noopener" class="btn btn-white btn-outline-white py-3 px-4">Fiverr</a>
+                </div>
+
+                <p class="hero-social">
+                  Connect with me:
+                  <a href="https://www.linkedin.com/in/mohammed-ali-148724221/" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="https://github.com/mrmas091" target="_blank" rel="noopener">GitHub</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/mrmas091" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    </div>
+  </section>
 
+  <section class="ftco-about img ftco-section ftco-no-pb about-mf" id="about-section">
+    <div class="container">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-5 d-flex mb-5 mb-lg-0">
+          <div class="profile-card ftco-animate">
+            <div class="about-img">
+              <img src="images/about-m.png" class="img-fluid" alt="Shaik Mohammed Ali">
+            </div>
+            <div class="about-info">
+              <p><span class="title-s">Name:</span> <span>Shaik Mohammed Ali</span></p>
+              <p><span class="title-s">Role:</span> <span>Power BI Developer & Data Analyst</span></p>
+              <p><span class="title-s">Experience:</span> <span>3+ Years</span></p>
+              <p><span class="title-s">Location:</span> <span>Bengaluru, India</span></p>
+              <p><span class="title-s">Availability:</span> <span>Freelance & Remote Projects</span></p>
+            </div>
 
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+            <div class="skill-tags" aria-label="Core skills">
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">DAX</span>
+              <span class="skill-tag">Power Query</span>
+              <span class="skill-tag">Data Modeling</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">Power BI Service</span>
+              <span class="skill-tag">SharePoint</span>
+              <span class="skill-tag">Power Apps</span>
+            </div>
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <h6 class = "mb-0">Bengaluru, India</h6>
-	          </div>
+        <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div class="heading-section ftco-animate">
+            <span class="section-kicker">About me</span>
+            <h1 class="big">About</h1>
+            <h2 class="mb-4">Building useful analytics, not just attractive charts</h2>
+
+            <p class="about-copy">
+              I am a Power BI Developer and Data Analyst who specializes in transforming raw business data into clear, interactive and decision-ready reporting solutions. My work combines SQL, Power Query, data modeling, DAX and Power BI to solve reporting problems across areas such as hospitality, banking, payroll, operations, research and monitoring & evaluation.
+            </p>
+            <p class="about-copy">
+              Alongside my professional work, I deliver freelance analytics projects and mentor learners in SQL and Power BI through practical, real-world scenarios. I focus on understanding the business question first, then building a solution that is accurate, maintainable and easy for end users to understand.
+            </p>
+
+            <ul class="about-info mt-4 px-md-0 px-2">
+              <li class="d-flex"><span>Current focus:</span> <span>Business Intelligence, Reporting & Analytics</span></li>
+              <li class="d-flex"><span>Education:</span> <span>B.Tech in Mechanical Engineering, JNTUA</span></li>
+              <li class="d-flex"><span>Languages:</span> <span>English, Hindi, Telugu</span></li>
+              <li class="d-flex"><span>Freelance:</span> <span>Power BI, SQL, Reporting & Training</span></li>
+            </ul>
+
+            <div class="mt-4">
+              <a href="#contact-section" class="btn btn-primary py-3 px-4">Let's Work Together</a>
+              <a href="https://www.linkedin.com/in/mohammed-ali-148724221/" target="_blank" rel="noopener" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 91 6304662297</a></p>
-	          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-6 col-lg-3 mb-4 ftco-animate"><div class="stat-card"><strong>3+</strong><span>Years of Experience</span></div></div>
+        <div class="col-6 col-lg-3 mb-4 ftco-animate"><div class="stat-card"><strong>13+</strong><span>Freelance Orders</span></div></div>
+        <div class="col-6 col-lg-3 mb-4 ftco-animate"><div class="stat-card"><strong>10+</strong><span>Analytics Projects</span></div></div>
+        <div class="col-6 col-lg-3 mb-4 ftco-animate"><div class="stat-card"><strong>10+</strong><span>Learners Mentored</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="services-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-8 heading-section text-center ftco-animate">
+          <span class="section-kicker">What I do</span>
+          <h1 class="big big-2">Services</h1>
+          <h2 class="mb-4">Services</h2>
+          <p>End-to-end analytics support, from raw data and business requirements to finished dashboards, reports and automated workflows.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">01</div>
+            <h3>Power BI Dashboards</h3>
+            <p>Interactive dashboards, KPI reports, drill-through, tooltips, bookmarks, Row-Level Security and executive reporting tailored to business needs.</p>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="alisbuz69@gmail.com">alisbuz69@gmail.com</a></p>
-	          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">02</div>
+            <h3>SQL & Reporting Solutions</h3>
+            <p>SQL queries, views, stored procedures, reporting datasets and data preparation to support reliable business intelligence solutions.</p>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1-HMVh5BxLeYE6bW_67UDVg6b7VgpBv0F/view?usp=drive_link">resumelink</a></p>
-	          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">03</div>
+            <h3>Data Modeling & DAX</h3>
+            <p>Star schemas, relationships, reusable measures, time intelligence and business logic designed for accurate and scalable analytics.</p>
           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">04</div>
+            <h3>Power Query & Automation</h3>
+            <p>Data cleaning, transformation, repeatable refresh workflows and automated reporting processes that reduce manual effort.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">05</div>
+            <h3>Power Apps & SharePoint BI</h3>
+            <p>Business data capture solutions using Power Apps and SharePoint Lists, with approval workflows and Power BI reporting integration.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 ftco-animate">
+          <div class="service-card">
+            <div class="service-number">06</div>
+            <h3>Power BI & SQL Training</h3>
+            <p>Practical one-to-one and group training focused on real-world SQL, Power BI, data modeling, DAX and project-based learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScc5djY9F2Lm8fQibtZ6MShTi4soQq89nv38ab18oRshfxTCQ/viewform?usp=dialog" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@Productivebeardman"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/mohammed-ali-148724221/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://www.fiverr.com/mrmas09?up_rollout=true"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/productive_beard_boy/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+  <section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <span class="section-kicker">Professional journey</span>
+          <h1 class="big big-2">Experience</h1>
+          <h2 class="mb-4">Experience</h2>
+          <p>Corporate analytics experience combined with freelance delivery, mentoring and real-world business intelligence projects.</p>
+        </div>
+      </div>
 
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">Current</span>
+            <h2>Power BI Developer / Data Analyst</h2>
+            <span class="position">Ncore Technologies Pvt. Ltd. • Bengaluru</span>
+            <ul>
+              <li>Build and maintain Power BI reports and analytical solutions for operational and business reporting needs.</li>
+              <li>Use SQL and Power Query to prepare, transform and validate reporting data.</li>
+              <li>Develop DAX measures, KPI logic, data models and user-friendly report experiences with a focus on performance and clarity.</li>
+            </ul>
+          </div>
+        </div>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+        <div class="col-md-6 mb-4">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2024 – Present</span>
+            <h2>Freelance Power BI & Data Analytics Consultant</h2>
+            <span class="position">Independent • Fiverr & Direct Clients</span>
+            <ul>
+              <li>Deliver end-to-end Power BI, SQL and reporting solutions for clients across multiple business domains.</li>
+              <li>Translate business requirements into KPIs, data models, DAX measures and interactive dashboards.</li>
+              <li>Achieved Fiverr Level One seller status and received strong client feedback for patience, responsiveness and attention to detail.</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="col-md-6 mb-4">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2026</span>
+            <h2>Associate Mentor – Data Analytics Bootcamp</h2>
+            <span class="position">Emergi Mentors</span>
+            <ul>
+              <li>Supported learners through one-to-one mentoring sessions in SQL, Power BI and data analytics.</li>
+              <li>Led practical project sessions using real-world business scenarios and reporting challenges.</li>
+              <li>Helped learners troubleshoot technical issues, understand concepts and improve project delivery.</li>
+            </ul>
+          </div>
+        </div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+        <div class="col-md-6 mb-4">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">Core Expertise</span>
+            <h2>Business Intelligence & Analytics</h2>
+            <span class="position">Power BI • SQL Server • DAX • Power Query</span>
+            <ul>
+              <li>Dashboard development, KPI design, data visualization and business storytelling.</li>
+              <li>Data modeling, Row-Level Security, Power BI Service and reporting automation.</li>
+              <li>SQL development, data transformation, validation and performance-focused reporting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <div class="row mt-4">
+        <div class="col-12">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <br>
 
+      <div class="row">
+        <div class="col-md-8 mb-4">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2018 – 2022</span>
+            <h2>Bachelor of Technology – Mechanical Engineering</h2>
+            <span class="position">Jawaharlal Nehru Technological University Anantapur (JNTUA)</span>
+            <p class="mt-4">Completed B.Tech with an overall score of 76%.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center ftco-animate">
+          <a href="https://drive.google.com/file/d/1-HMVh5BxLeYE6bW_67UDVg6b7VgpBv0F/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-primary py-4 px-5">View Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-8 heading-section text-center ftco-animate">
+          <span class="section-kicker">Selected work</span>
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Featured Projects</h2>
+          <p>A selection of analytics and business intelligence solutions built across reporting, operations, finance, customer analytics and monitoring workflows.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_4.jpg');"></div>
+            <div class="project-body">
+              <h3>Hospitality Performance Dashboard</h3>
+              <p>Business performance reporting for occupancy, RevPAR, length of stay and revenue trends, supported by SQL views, DAX, Row-Level Security and interactive navigation.</p>
+              <div class="project-tech"><span>Power BI</span><span>SQL</span><span>DAX</span><span>RLS</span></div>
+              <a href="#contact-section" class="project-link">Discuss a similar project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_3.jpg');"></div>
+            <div class="project-body">
+              <h3>Payroll KPI & Operational Reporting</h3>
+              <p>A multi-page KPI reporting solution covering executive summary, compliance, payments, accounting and workforce-related operational metrics with secure user access.</p>
+              <div class="project-tech"><span>Power BI</span><span>DAX</span><span>Data Modeling</span><span>RLS</span></div>
+              <a href="#contact-section" class="project-link">Discuss a similar project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_5.jpg');"></div>
+            <div class="project-body">
+              <h3>Monitoring & Evaluation Reporting System</h3>
+              <p>An integrated solution using SharePoint Lists, Power Apps approval workflows and Power BI reporting for country, region, activities, outputs, financials and management actions.</p>
+              <div class="project-tech"><span>Power Apps</span><span>SharePoint</span><span>Power BI</span><span>Workflow</span></div>
+              <a href="#contact-section" class="project-link">Discuss a similar project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_2.jpg');"></div>
+            <div class="project-body">
+              <h3>Banking Customer Churn Dashboard</h3>
+              <p>Customer churn analysis across a 10,000-customer dataset, helping users explore churn patterns by geography, gender and customer characteristics through interactive reporting.</p>
+              <div class="project-tech"><span>Power BI</span><span>Data Analysis</span><span>DAX</span><span>Visualization</span></div>
+              <a href="#contact-section" class="project-link">Discuss a similar project →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_1.jpg');"></div>
+            <div class="project-body">
+              <h3>Pizza Sales Analysis</h3>
+              <p>Sales dashboard focused on revenue, average order value, total orders and top/bottom product performance, supported by SQL analysis and interactive Power BI visuals.</p>
+              <div class="project-tech"><span>Power BI</span><span>SQL</span><span>DAX</span><span>Power Query</span></div>
+              <a href="https://github.com/mrmas091/Pizza-Sales-Analysis" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 d-flex ftco-animate">
+          <div class="project-card w-100">
+            <div class="project-image" style="background-image:url('images/proj_4.jpg');"></div>
+            <div class="project-body">
+              <h3>Jira Project Analytics Dashboard</h3>
+              <p>Project reporting across multiple teams using Jira REST API data, pagination and story-point analysis to improve visibility into delivery and team performance.</p>
+              <div class="project-tech"><span>Power BI</span><span>REST API</span><span>Power Query</span><span>Jira</span></div>
+              <a href="https://github.com/mrmas091" target="_blank" rel="noopener" class="project-link">View more work →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center ftco-animate">
+          <p>Looking for a dashboard or reporting solution built around your own business data?</p>
+          <a href="#contact-section" class="btn btn-primary py-3 px-5">Start a Conversation</a>
+          <a href="https://github.com/mrmas091" target="_blank" rel="noopener" class="btn btn-white btn-outline-white py-3 px-5">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="testimonials-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-8 heading-section text-center ftco-animate">
+          <span class="section-kicker">Client feedback</span>
+          <h1 class="big big-2">Reviews</h1>
+          <h2 class="mb-4">What Clients Value</h2>
+          <p>Strong technical delivery matters, but communication, patience and understanding the real business need are just as important.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4 ftco-animate">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Great personality, patient and friendly person! Will recommend him for future projects!”</blockquote>
+            <div class="testimonial-source">Fiverr client review • 5-star rating</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 ftco-animate">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>Clients have consistently highlighted patience, quick responsiveness, attention to detail and clear communication throughout project delivery.</blockquote>
+            <div class="testimonial-source">Recurring themes from client feedback</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pt">
+    <div class="container">
+      <div class="cta-box ftco-animate">
+        <span class="section-kicker">Have a project in mind?</span>
+        <h2>Let's turn your data into something useful.</h2>
+        <p>Whether you need a Power BI dashboard, SQL reporting solution, automated workflow, data model or practical training, send me the requirement and I will help you identify the best way forward.</p>
+        <a href="#contact-section" class="btn btn-primary py-3 px-5">Discuss Your Project</a>
+        <a href="https://www.fiverr.com/mrmas09" target="_blank" rel="noopener" class="btn btn-white btn-outline-white py-3 px-5">Hire Me on Fiverr</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-8 heading-section text-center ftco-animate">
+          <span class="section-kicker">Get in touch</span>
+          <h1 class="big big-2">Contact</h1>
+          <h2 class="mb-4">Let's Work Together</h2>
+          <p>Available for freelance projects, remote opportunities, consulting and analytics training.</p>
+        </div>
+      </div>
+
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="align-self-stretch box p-4 text-center w-100">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
+            <h3 class="mb-4">Location</h3>
+            <p>Bengaluru, India</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="align-self-stretch box p-4 text-center w-100">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
+            <h3 class="mb-4">Phone</h3>
+            <p><a href="tel:+916304662297">+91 63046 62297</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="align-self-stretch box p-4 text-center w-100">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
+            <h3 class="mb-4">Email</h3>
+            <p><a href="mailto:alisbuz69@gmail.com">alisbuz69@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate mb-4">
+          <div class="align-self-stretch box p-4 text-center w-100">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
+            <h3 class="mb-4">Resume</h3>
+            <p><a href="https://drive.google.com/file/d/1-HMVh5BxLeYE6bW_67UDVg6b7VgpBv0F/view?usp=drive_link" target="_blank" rel="noopener">View Resume</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h2>Ready to discuss your <span>project?</span></h2>
+          <p class="mt-4">
+            <a href="mailto:alisbuz69@gmail.com?subject=Project%20Inquiry" class="btn btn-primary py-3 px-5">Email Me</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScc5djY9F2Lm8fQibtZ6MShTi4soQq89nv38ab18oRshfxTCQ/viewform?usp=dialog" target="_blank" rel="noopener" class="btn btn-white btn-outline-white py-3 px-5">Project Inquiry Form</a>
+          </p>
+
+          <div class="social-text-links">
+            <a href="https://www.linkedin.com/in/mohammed-ali-148724221/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/mrmas091" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.fiverr.com/mrmas09" target="_blank" rel="noopener">Fiverr</a>
+            <a href="https://www.youtube.com/@Productivebeardman" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.instagram.com/productive_beard_boy/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Shaik Mohammed Ali. All rights reserved |
+            Template base by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -576,8 +889,8 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
   <script src="js/main.js"></script>
-    
-  </body>
+
+
+</body>
 </html>
